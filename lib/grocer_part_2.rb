@@ -2,7 +2,7 @@ require_relative './part_1_solution.rb'
 require "pry"
 
 def apply_coupons(cart, coupon)
-  binding.pry
+  # binding.pry
   counter = 0
   new_cart = []
   while counter < coupon.length
@@ -12,6 +12,3 @@ def apply_coupons(cart, coupon)
   end
 
 end
-
-ITEM NAME '
-     Failure/Error:
