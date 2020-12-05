@@ -1,7 +1,6 @@
 require_relative './part_1_solution.rb'
 require "pry"
 def apply_coupons(cart, coupons)
-
 counter = 0
 while counter < coupons.length
   # return the name of the item on the coupon cart should check if item coup exist in cart
@@ -27,9 +26,10 @@ while counter < coupons.length
               # number of items the coupon applies to
               :count => coupons[counter][:num],
               # take orginal cart item and grab key value pair
-              :clearance => cart_item[:clearance],
+              :clearance => cart_item[:clearance]
             }
             # add the cart_item_w_coupon to the cart
+            binding.pry
             cart << cart_item_w_coupon
             # subtract number from the cart item count
             cart_item[:count] -= coupons[counter][:num]
