@@ -5,7 +5,7 @@ def apply_coupons(cart, coupon)
   binding.pry
 
   counter = 0
-  new_arr = []
+  new_cart = []
   while counter < coupon.length
     counter += 1
   end
