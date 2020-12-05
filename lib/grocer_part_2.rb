@@ -7,7 +7,11 @@ def apply_coupons(cart, coupon)
   new_cart = []
   while counter < coupon.length
     cart_item = find_item_by_name_in_collection(cart[counter][:item], new_cart)
+    cart_item_w_coupon = "#{cart[counter][item]}/W/COUPON"
     counter += 1
   end
 
 end
+
+ITEM NAME '
+     Failure/Error:
